@@ -1,7 +1,7 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, OrbitControls } from '@react-three/drei'
 import { useEffect, useRef } from 'react'
-import { Box3, Vector3, Mesh, Group } from 'three'
+import { Box3, Vector3, Mesh, Group, MeshStandardMaterial } from 'three'
 
 function HeadModel() {
   const gltf = useGLTF('/models/head.glb')
@@ -18,12 +18,14 @@ function HeadModel() {
         const mesh = child as Mesh
         if (Array.isArray(mesh.material)) {
           mesh.material.forEach((mat) => {
-            mat.wireframe = true
-            mat.color.set(0xffffff)
+            const material = mat as MeshStandardMaterial
+           material.wireframe = true
+           material.color.set(0xffffff)
           })
         } else {
-          mesh.material.wireframe = true
-          mesh.material.color.set(0xffffff)
+          const material = mesh.material as MeshStandardMaterial
+          material.wireframe = true
+    material.color.set(0xffffff)
         }
       }
     })
