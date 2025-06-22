@@ -13,8 +13,8 @@ export function Proyects() {
       link: "https://example.com/project2",
     },
     {
-      name: "Project 3",
-      description: "Description of project 3",
+      name: "Ecommerce",
+      description: "Un ecommerce de productos de tecnología (React, Tailwind CSS, PostgreSQL y Express)",
       link: "https://example.com/project3",
     },
     {

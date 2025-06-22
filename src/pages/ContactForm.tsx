@@ -65,10 +65,10 @@ export default function ContactForm() {
               </label>
             </p>
 
-            <input type="text" name="name" placeholder="Name" required className="border border-black p-2" />
+            <input type="text" name="name" placeholder="Nombre" required className="border border-black p-2" />
             <input type="email" name="email" placeholder="Email" required className="border border-black p-2" />
-            <textarea name="message" placeholder="Message" required className="border border-black p-2 resize-none h-40" />
-            <button type="submit" className="bg-black text-white py-2 px-4">Send</button>
+            <textarea name="message" placeholder="Mensaje" required className="border border-black p-2 resize-none h-40" />
+            <button type="submit" className="bg-black text-white py-2 px-4">Enviar</button>
           </form>
         )}
       </div>
