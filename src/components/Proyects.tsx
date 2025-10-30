@@ -8,25 +8,26 @@ export function Proyects() {
       link: "https://example.com/project1",
     },
     {
-      name: "Aplicación de Tareas",
-      description: "una aplicacion para gestionar tareas con login de usuario ( PostgreSQL, Express, React)",
-      link: "https://example.com/project2",
-    },
-    {
       name: "Ecommerce",
       description: "Un ecommerce de productos de tecnología (React, Tailwind CSS, PostgreSQL y Express)",
       link: "https://example.com/project3",
+    },
+    {
+      name: "Login",
+      description: "Un logion completo con validaciones y recuperacion de contraseña (React, Tailwind CSS, Express, PostgreSQL)",
+      link: "https://example.com/project5",
+    },
+    {
+      name: "Aplicación de Tareas",
+      description: "una aplicacion para gestionar tareas con login (simple) de usuario ( PostgreSQL, Express, React)",
+      link: "https://example.com/project2",
     },
     {
       name: "Pokememory",
       description: "Una app que permite jugar al memory con pokemones (React, Tailwind CSS)",
       link: "https://example.com/project4",
     },
-    {
-      name: "Calculadora",
-      description: "Una calculadora sencilla (React, Tailwind CSS)",
-      link: "https://example.com/project5",
-    },
+    
   ]
 
   return (
