@@ -8,11 +8,13 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
     const form = formRef.current;
     if (!form) return;
 
     const formData = new FormData(form);
+    
+    // Asegurarse de que form-name esté incluido
+    formData.append("form-name", "contact");
 
     fetch("/", {
       method: "POST",
@@ -41,7 +43,6 @@ export default function ContactForm() {
         <source src={video} type="video/mp4" />
         Tu navegador no soporta el video HTML5.
       </video>
-
       <div className="relative z-10 flex items-center justify-center h-full">
         {submitted ? (
           <div className="bg-white p-8 text-center border border-black text-xl font-bold text-black flex flex-col items-center gap-4">
@@ -61,10 +62,9 @@ export default function ContactForm() {
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
               <label>
-                Don’t fill this out: <input name="bot-field" />
+                Don't fill this out: <input name="bot-field" />
               </label>
             </p>
-
             <input type="text" name="name" placeholder="Nombre" required className="border border-black p-2" />
             <input type="email" name="email" placeholder="Email" required className="border border-black p-2" />
             <textarea name="message" placeholder="Mensaje" required className="border border-black p-2 resize-none h-40" />
