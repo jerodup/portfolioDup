@@ -4,12 +4,12 @@ export function Proyects() {
   const projects = [
 
     {
-      name: "Ecommerce (en progreso)",
+      name: "Ecommerce",
       description: "Un ecommerce de productos de tecnología (React, Tailwind CSS, PostgreSQL y Express)",
       link: "https://github.com/jerodup/E-commerce",
     },
     {
-      name: "Aplcación de eventos (en progreso)",
+      name: "Aplcación de eventos",
       description: "Permite buscar y crear eventos cerca de tu ubicación y mostrar su ubicación (Golang, PostgreSQL, React)",
       link: "https://github.com/jerodup/eventapp",
     },
